@@ -1,12 +1,13 @@
-import React from 'react';
-import { Button, Card, CardContent } from '@mui/material'; // Import from Material UI
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
-export default function MartinAntonioVisuals() {
+export default function MartinAntonioRecords() {
   return (
     <div className="p-6 max-w-4xl mx-auto space-y-8">
       <header className="text-center space-y-2">
-        <h1 className="text-4xl font-bold">Martin Antonio Visuals</h1>
-        <p className="text-lg text-muted-foreground">Visuals for Artists with a Voice.</p>
+        <h1 className="text-4xl font-bold">Martin Antonio Records</h1> {/* Changed title */}
+        <p className="text-lg text-muted-foreground">Visuals and Music for Artists with a Voice.</p> {/* Updated description */}
       </header>
 
       <section className="grid md:grid-cols-2 gap-6">
@@ -18,6 +19,8 @@ export default function MartinAntonioVisuals() {
               <li>📱 Promo kits for Instagram, YouTube, & TikTok</li>
               <li>🎨 Cover art & short-form reels</li>
               <li>🧠 Artist branding & digital storytelling</li>
+              <li>🎶 Music production lessons and training</li> {/* New service */}
+              <li>🎧 Music production services (beat-making, mixing, mastering)</li> {/* New service */}
             </ul>
           </CardContent>
         </Card>
@@ -35,12 +38,39 @@ export default function MartinAntonioVisuals() {
         </Card>
       </section>
 
+      {/* New Section: Music Lessons & Production */}
+      <section className="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardContent className="p-6 space-y-3">
+            <h2 className="text-2xl font-semibold">Music Production Lessons</h2>
+            <p>Want to take your music to the next level? We offer one-on-one music production lessons, teaching you the ins and outs of making your own beats, mixing, and mastering your tracks.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>🎚️ Learn music production software (Ableton, FL Studio, etc.)</li>
+              <li>🎼 Get hands-on experience with beat-making and sound design</li>
+              <li>🎛️ Improve your mixing and mastering skills for professional-quality tracks</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-6 space-y-3">
+            <h2 className="text-2xl font-semibold">Music Production Services</h2>
+            <p>We also offer full music production services, from beat-making to mixing and mastering, to help you create the sound you’re envisioning.</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>🎵 Custom beats tailored to your style</li>
+              <li>🎚️ Professional mixing and mastering services</li>
+              <li>🎧 High-quality sound production for any genre</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
       <section className="text-center space-y-4">
         <h2 className="text-2xl font-semibold">Support the Movement</h2>
         <p>If you believe in the vision, you can help fund visuals for an emerging artist.</p>
         <div className="flex justify-center gap-4">
           <Button>Donate</Button>
-          <Button variant="outlined">Sponsor a Visual</Button>
+          <Button variant="outline">Sponsor a Visual</Button>
         </div>
       </section>
 
