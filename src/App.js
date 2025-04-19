@@ -98,8 +98,8 @@ function App() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2">Support the Movement</h2>
-        <p>If you believe in the vision, you can help fund visuals for an emerging artist.</p>
+        <h2 className="text-2xl font-semibold mb-2">Promote your youtube video</h2>
+        <p>you will get real organic views</p>
 
         <label className="flex items-center space-x-2 mt-4">
           <input
